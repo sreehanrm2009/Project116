@@ -10,7 +10,6 @@ function setup() {
       canvas.center();
       video = createCapture(VIDEO);
       video.size(300, 300);
-      video.hide();
       posenet = ml5.poseNet(video, modelLoaded);
       posenet.on('pose', gotPoses);
 }
